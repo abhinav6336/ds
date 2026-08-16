@@ -6,7 +6,10 @@ void push(int data){
     if(top==-1){
         stack[0]=data;
         top++;
-    }else{
+    }else if(top==SIZE-1){
+        printf("Stack Overflow");
+    }
+    else{
         stack[++top]=data;
     }
 }
