@@ -31,7 +31,6 @@ int pop(){
 }
 int peek(){
     if(head==NULL){
-        printf("Stack Underflow !!!");
         return -1;
     }else{
         return head -> data;
